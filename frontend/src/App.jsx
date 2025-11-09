@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import Header from './components/UI/Header/Header.jsx'
 
 const API_URL = import.meta.env.VITE_API_URL;
 
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <>
+      <Header/>
       <h1>Список Items</h1>
       <ul>
         {items.map(item => (
