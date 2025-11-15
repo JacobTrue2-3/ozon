@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header text="Hello World!" title="Header" />
       <h1 onClick={h1Click} onMouseEnter={() => console.log("Навели курсор на h1")}>Список Items {tempText}</h1>
       <ul>
         {items.map(item => (

@@ -1,6 +1,7 @@
-function Header() {
+function Header(props) {
     return (
-        <header> Шапка сайта </header>
+        <header> {props.title} <h1> {props.text} </h1> </header>
+        
     )
 }
 
